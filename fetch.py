@@ -20,7 +20,8 @@ def create_tables(db_file):
             # 'sal-quote-funds-sitemap.xml', 
             # 'sal-quote-etfs-sitemap.xml'
             ]
-        url = 'https://www.morningstar.com/sitemaps/individual/{}'
+        # url = 'https://www.morningstar.com/sitemaps/individual/{}'
+        url = 'https://www.morningstar.com/sitemaps/{}'
 
         for xml_file in xml_files:
             # type = re.findall('sal-quote-(.+?)-sitemap', xml_file)[0]
