@@ -23,7 +23,8 @@ def create_tables(db_file):
         url = 'https://www.morningstar.com/sitemaps/individual/{}'
 
         for xml_file in xml_files:
-            type = re.findall('sal-quote-(.+?)-sitemap', xml_file)[0]
+            # type = re.findall('sal-quote-(.+?)-sitemap', xml_file)[0]
+            type = re.findall('(.+?)_1', xml_file)[0]
 
             print('\nFetching list of {} from MorningStar.com'.format(type))
             xml = requests.get(url.format(xml_file)).text
