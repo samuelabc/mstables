@@ -133,7 +133,7 @@ def create_tables(db_file):
 
 
 def csv_content(file, columns, header=False):
-    with open(file) as csvfile:
+    with open(file, encoding='cp437') as csvfile:
         info = reader(csvfile)#, delimiter=',', quotechar='"')
         if header == True:
             return [row[:columns] for row in info]
