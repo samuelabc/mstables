@@ -14,8 +14,11 @@ def create_tables(db_file):
     def mssitemap():
         urls1 = []
         xml_files = [
-            'sal-quote-stock-sitemap.xml', 'sal-quote-cefs-sitemap.xml',
-            'sal-quote-funds-sitemap.xml', 'sal-quote-etfs-sitemap.xml'
+            'stocks_1.xml',
+            # 'sal-quote-stock-sitemap.xml', 
+            # 'sal-quote-cefs-sitemap.xml',
+            # 'sal-quote-funds-sitemap.xml', 
+            # 'sal-quote-etfs-sitemap.xml'
             ]
         url = 'https://www.morningstar.com/sitemaps/individual/{}'
 
